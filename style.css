@@ -1,0 +1,116 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    font-family: monospace;
+    background:url(3.jpg);
+    background-size: cover;
+}
+
+.main-division {
+    width: 55%;
+    height: 100vh;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+}
+
+.intro {
+    display: flex;
+    height: 40%;
+    flex-direction: column;
+}
+
+.intro img {
+    margin: auto;
+    border-radius: 60%;
+    -webkit-border-radius: 60%;
+    -moz-border-radius: 60%;
+    -ms-border-radius: 60%;
+    -o-border-radius: 60%;
+}
+
+.intro span {
+    padding-left: 20px;
+    margin: auto;
+    font-weight: 900;
+    font-size: 15px;
+      text-align: center;
+
+}
+
+.button-section {
+    display: flex;
+    
+    flex-direction: column;
+    justify-content: space-between;
+    height: 60%;
+    align-items: center;
+       border-radius: 35px;
+}
+
+.button-section a {
+    text-decoration: none;
+    color: white;
+    background-color: rgb(202, 195, 205);
+    width: 90%;
+    height: 50px;
+    text-align: center;
+    padding-top: 17px;
+    box-shadow: 0px 6px 8px rgb(123, 160, 230);
+    font-size: 18px;
+}
+
+.button-section a:hover {
+    transform: translateY(-7px);
+    -webkit-transform: translateY(-7px);
+    -moz-transform: translateY(-7px);
+    -ms-transform: translateY(-7px);
+    -o-transform: translateY(-7px);
+}
+.socail-icons  img{
+
+    width: 14px;
+    margin:  15 auto ;
+
+}
+.socail-icons{
+width: 50px;
+position: fixed;
+top: 65%;
+left: 0;
+transform: translateY(-50%); 
+z-index: 1;
+}
+.socail-icons  img{
+    display: block;
+    width: 20px;
+    margin:  0 auto 20px;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width: 768px) {
+    .main-division {
+        width: 90%;
+        height: 100vh;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        padding: 50px;
+    }
+    .intro {
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .intro span {
+        text-align: center;
+    }
+}
